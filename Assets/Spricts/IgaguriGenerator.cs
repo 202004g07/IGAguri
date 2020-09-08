@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class IgaguriGenerator : MonoBehaviour
 {
+    public GameObject MainCam;
     public GameObject igaguriPrefab;
     public float ThrowPower = 2000;
     // Update is called once per frame
@@ -11,10 +12,11 @@ public class IgaguriGenerator : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Vector3 worldDir = ray.direction;
+            //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            //Vector3 worldDir = ray.direction;
 
-            Instantiate(igaguriPrefab).GetComponent<IgaguriController>().Throw(worldDir.normalized * ThrowPower);
+
+            Instantiate(igaguriPrefab, MainCam.transform.position, MainCam.transform.rotation).GetComponent<IgaguriController>().Throw(ThrowPower);
         }
     }
 }

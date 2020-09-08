@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1166254199417681445}
   - component: {fileID: 1166254199417681441}
   - component: {fileID: 1166254199417681440}
-  - component: {fileID: 1166254199417681443}
+  - component: {fileID: -1022166721914108886}
   m_Layer: 0
   m_Name: igaguriPrefab
   m_TagString: Untagged
@@ -4845,7 +4845,7 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &1166254199417681443
+--- !u!114 &-1022166721914108886
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
