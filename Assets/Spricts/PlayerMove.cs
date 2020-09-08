@@ -5,17 +5,23 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     public float JumpPower;
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
+    bool isGround = true;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && isGround)
         {
             GetComponent<Rigidbody>().AddForce(transform.up * JumpPower);
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        isGround = true;
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        isGround = false;
+    }
+
 }
