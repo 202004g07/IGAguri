@@ -16,9 +16,9 @@ WASDで移動、Spaceでジャンプができます。
 ### PlayerController
    FPS視点およびWASD移動用のクラス
 ### PlayerMove
-　 ジャンプと設置判定用のクラス
+　　ジャンプと設置判定用のクラス
 ### RotorKani
-   RotateAroundを用いて、どの”軸”を中心に指定して回転させる
+   RotateAroundを用いて、”軸”を指定して回転させることができる、カニが回る
 ### TestSpin
    RotateAroundを用いて、下辺を中心にして倒れるテストクラス……でしたがうまくいったのでそのまま使用しています
 ### ScoreCount 
