@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class IgaguriController : MonoBehaviour
 {
-    public GameObject UImanager;
+    // public GameObject UImanager;
     public void Throw(float Power)
     {
         GetComponent<Rigidbody>().AddForce(transform.forward * Power);
@@ -18,7 +18,7 @@ public class IgaguriController : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Monkey"))
         {
-            UImanager.GetComponent<ScoreCount>().AddScore();
+            //  UImanager.GetComponent<ScoreCount>().AddScore();
         }
         Destroy(gameObject, 0.3f);
     }
